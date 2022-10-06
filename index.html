@@ -22,11 +22,11 @@
       rel="stylesheet"
     />
 
-    <style>
+    <!-- <style>
       * {
         outline: 1px solid red;
       }
-    </style>
+    </style> -->
 
     <!-- tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -55,40 +55,64 @@
       };
     </script>
   </head>
-  <body>
-    <header class="">
-      <a class="" href="index.html"
-        ><img class="col" src="./images/logo.svg" alt="Logo"
-      /></a>
-      <div class="">
-        <img class="" src="./images/hero-mobile.jpg" alt="" />
+  <body
+    class="min-h-screen flex flex-col justify-center items-center bg-primary-red-100"
+  >
+    <header>
+      <div class="p-7">
+        <a href="index.html"
+          ><img class="w-24" src="./images/logo.svg" alt="Logo"
+        /></a>
       </div>
-      <section class="">
-        <h1>We're coming soon</h1>
-        <p>
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
-        </p>
-        <form action="">
-          <input type="text" placeholder="Email Address" />
-          <button class="btn btn-primary">
-            <img src="./images/icon-arrow.svg" alt="Submit" />
-          </button>
-        </form>
+      <section>
+        <div>
+          <img src="./images/hero-mobile.jpg" alt="" />
+        </div>
+        <article
+          class="px-10 py-16 flex flex-col gap-4 text-center items-center justify-center"
+        >
+          <h1
+            class="text-4xl text-neutral-red font-semibold uppercase tracking-[0.25em]"
+          >
+            <span class="font-thin text-primary-red-300">We're</span> coming
+            soon
+          </h1>
+          <p class="text-sm text-primary-red-300">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form
+            class="flex items-center border border-primary-red-300 rounded-full"
+            action=""
+          >
+            <input
+              class="bg-transparent px-5 py-2 outline-none placeholder:text-primary-red-300 placeholder:text-sm"
+              type="text"
+              placeholder="Email Address"
+            />
+            <button
+              class="px-6 py-3 bg-gradient-to-r from-primary-red-200 to-primary-red-500 rounded-full shadow-lg"
+            >
+              <img class="w--auto" src="./images/icon-arrow.svg" alt="Submit" />
+            </button>
+          </form>
+        </article>
       </section>
     </header>
 
-    <footer class="">
+    <footer class="mb-3 text-xs text-center">
       <p class="attribution">
         Challenge by
         <a
+          class="text-primary-red-300 hover:text-primary-red-500 hover:underline"
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
           rel="noopener"
           >Frontend Mentor</a
         >. Coded by
         <a
+          class="text-primary-red-300 hover:text-primary-red-500 hover:underline"
           href="https://www.frontendmentor.io/profile/shivaprakash-sudo"
           target="_blank"
           rel="noopener"
