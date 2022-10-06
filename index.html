@@ -14,19 +14,56 @@
 
     <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-    <!-- bootstrap css -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
       rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
     />
+
+    <style>
+      * {
+        outline: 1px solid red;
+      }
+    </style>
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom configuration of tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                "red-100": "hsl(0, 100%, 98%)",
+                "red-200": "hsl(0, 80%, 86%)",
+                "red-300": "hsl(0, 36%, 70%)",
+                "red-400": "hsl(0, 74%, 74%)",
+                "red-500": "hsl(0, 93%, 68%)",
+              },
+              neutral: {
+                red: "hsl(0, 6%, 24%)",
+              },
+            },
+            fontFamily: {
+              sans: ["Josefin Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <header class="container">
-      <a href="index.html"><img src="./images/logo.svg" alt="Logo" /></a>
-      <div><img src="./images/hero-mobile.jpg" alt="" /></div>
-      <section>
+    <header class="">
+      <a class="" href="index.html"
+        ><img class="col" src="./images/logo.svg" alt="Logo"
+      /></a>
+      <div class="">
+        <img class="" src="./images/hero-mobile.jpg" alt="" />
+      </div>
+      <section class="">
         <h1>We're coming soon</h1>
         <p>
           Hello fellow shoppers! We're currently building our new fashion store.
@@ -42,7 +79,7 @@
       </section>
     </header>
 
-    <footer class="container">
+    <footer class="">
       <p class="attribution">
         Challenge by
         <a
@@ -59,12 +96,5 @@
         >.
       </p>
     </footer>
-
-    <!-- bootstrap script -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
