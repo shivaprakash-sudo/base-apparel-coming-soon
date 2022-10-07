@@ -10,8 +10,6 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -27,14 +25,24 @@ Users should be able to:
   - The `input` field is empty
   - The email address is not formatted correctly
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+#### Desktop Views
+
+![Desktop View](./images/screenshots/desktop-view.png)
+
+##### Error and Button Hover view
+
+![Desktop Error and Hover View](./images/screenshots/desktop-error-view.png)
+
+#### Mobile View
+
+![Mobile View](./images/screenshots/mobile-full-view.png)
 
 ### Links
 
-- Solution URL: [GitHub repo](https://your-solution-url.com)
-- Live Site URL: [Base Apparel Coming Soon](https://your-live-site-url.com)
+- Solution URL: [GitHub repo](https://github.com/shivaprakash-sudo/base-apparel-coming-soon)
+- Live Site URL: [Base Apparel Coming Soon](https://shivaprakash-sudo.github.io/base-apparel-coming-soon/)
 
 ## My process
 
@@ -44,15 +52,11 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- Bootstrap - For styles
-
-### What I learned
-
-### Continued development
+- Tailwindcss - For styles
 
 ### Useful resources
 
-- [Bootstrap](https://www.example.com) - Official documentation is always a good place to start when you're in doubt.
+- [Tailwindcss](https://tailwindcss.com/docs/installation) - Official documentation is always a good place to start when you're in doubt.
 
 ## Author
 
