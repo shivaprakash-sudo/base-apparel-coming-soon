@@ -83,16 +83,43 @@
             and our launch deals.
           </p>
           <form
-            class="flex items-center border border-primary-red-300 rounded-full"
+            id="form-email"
+            class="flex items-center border rounded-full"
             action=""
           >
-            <input
-              class="bg-transparent px-5 py-2 outline-none placeholder:text-primary-red-300 placeholder:text-sm"
-              type="text"
-              placeholder="Email Address"
-            />
+            <div class="relative">
+              <input
+                id="email"
+                class="bg-transparent px-5 py-2 outline-none placeholder:text-primary-red-300 placeholder:text-sm placeholder:text-gray-300"
+                type="text"
+                placeholder="Email Address"
+              />
+              <div>
+                <p
+                  id="empty-input-warning"
+                  class="hidden absolute top-12 left-5 text-xs text-primary-red-400"
+                >
+                  Please provide an email
+                </p>
+                <p
+                  id="input-warning"
+                  class="hidden absolute top-12 left-5 text-xs text-primary-red-400"
+                >
+                  Please provide a valid email
+                </p>
+                <p
+                  id="input-success"
+                  class="hidden absolute top-12 left-5 text-xs text-green-500"
+                >
+                  Looks good!
+                </p>
+              </div>
+            </div>
+
             <button
-              class="px-6 py-3 bg-gradient-to-r from-primary-red-200 to-primary-red-500 rounded-full shadow-lg"
+              type="submit"
+              id="btn-submit"
+              class="px-6 py-3 bg-gradient-to-r from-primary-red-200 to-primary-red-400 rounded-full shadow-lg"
             >
               <img class="w--auto" src="./images/icon-arrow.svg" alt="Submit" />
             </button>
@@ -120,5 +147,7 @@
         >.
       </p>
     </footer>
+
+    <script src="/script.js"></script>
   </body>
 </html>
