@@ -16,19 +16,27 @@ window.onload = () => {
     const borderSuccess = " border-2 border-green-500";
 
     if (emailInput.value === "" || emailInput.value === null) {
-      inputWarning.classList.add("hidden");
-      emptyInputWarning.classList.remove("hidden");
+      addClassTo(inputWarning, "hidden");
+      removeClassFrom(emptyInputWarning, "hidden");
     } else if (!emailRegex.test(emailInput.value)) {
-      formEmail.classList.remove([...borderSuccess.split(" ")]);
-      inputSuccess.classList.add("hidden");
-      emptyInputWarning.classList.add("hidden");
-      inputWarning.classList.remove("hidden");
+      removeClassFrom(formEmail, [...borderSuccess.split(" ")]);
+      addClassTo(inputSuccess, "hidden");
+      addClassTo(emptyInputWarning, "hidden");
+      removeClassFrom(inputWarning, "hidden");
       formEmail.className += borderWarning;
     } else {
-      formEmail.classList.remove([...borderWarning.split(" ")]);
-      inputWarning.classList.add("hidden");
-      inputSuccess.classList.remove("hidden");
+      removeClassFrom(formEmail, [...borderSuccess.split(" ")]);
+      addClassTo(inputWarning, "hidden");
+      removeClassFrom(inputSuccess, "hidden");
       formEmail.className += borderSuccess;
     }
+  }
+
+  function addClassTo(element, className) {
+    element.classList.add(className);
+  }
+
+  function removeClassFrom(element, className) {
+    element.classList.remove(className);
   }
 };
