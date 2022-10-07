@@ -56,76 +56,82 @@
     </script>
   </head>
   <body
-    class="min-h-screen flex flex-col justify-center items-center bg-primary-red-100"
+    class="min-h-screen flex flex-col justify-center items-center bg-primary-red-100 lg:items-start lg:gap-16 lg:px-40 lg:py-16 lg:bg-[url('./images/bg-pattern-desktop.svg')] lg:bg-no-repeat"
   >
-    <header>
-      <div class="p-7">
+    <header class="lg:max-w-[40%] lg:flex lg:flex-col lg:gap-32">
+      <div class="p-7 lg:p-0">
         <a href="index.html"
-          ><img class="w-24" src="./images/logo.svg" alt="Logo"
+          ><img class="w-24 md:w-32 lg:w-44" src="./images/logo.svg" alt="Logo"
         /></a>
       </div>
-      <section>
-        <div>
-          <img src="./images/hero-mobile.jpg" alt="" />
-        </div>
-        <article
-          class="px-10 py-16 flex flex-col gap-4 text-center items-center justify-center"
-        >
-          <h1
-            class="text-4xl text-neutral-red font-semibold uppercase tracking-[0.25em]"
-          >
-            <span class="font-thin text-primary-red-300">We're</span> coming
-            soon
-          </h1>
-          <p class="text-sm text-primary-red-300">
-            Hello fellow shoppers! We're currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
-          <form
-            id="form-email"
-            class="flex items-center border rounded-full"
-            action=""
-          >
-            <div class="relative">
-              <input
-                id="email"
-                class="bg-transparent px-5 py-2 outline-none placeholder:text-primary-red-300 placeholder:text-sm placeholder:text-gray-300"
-                type="text"
-                placeholder="Email Address"
-              />
-              <div>
-                <p
-                  id="empty-input-warning"
-                  class="hidden absolute top-12 left-5 text-xs text-primary-red-400"
-                >
-                  Please provide an email
-                </p>
-                <p
-                  id="input-warning"
-                  class="hidden absolute top-12 left-5 text-xs text-primary-red-400"
-                >
-                  Please provide a valid email
-                </p>
-                <p
-                  id="input-success"
-                  class="hidden absolute top-12 left-5 text-xs text-green-500"
-                >
-                  Looks good!
-                </p>
-              </div>
-            </div>
 
-            <button
-              type="submit"
-              id="btn-submit"
-              class="px-6 py-3 bg-gradient-to-r from-primary-red-200 to-primary-red-400 rounded-full shadow-lg"
+      <div class="lg:absolute top-0 left-[60%] right-0 bottom-0">
+        <img class="mx-auto sm:hidden" src="./images/hero-mobile.jpg" alt="" />
+        <img
+          class="mx-auto hidden sm:block"
+          src="./images/hero-desktop.jpg"
+          alt=""
+        />
+      </div>
+      <article
+        class="px-10 py-16 flex flex-col gap-4 text-center items-center justify-center lg:text-left lg:p-0 lg:gap-8"
+      >
+        <h1
+          class="text-4xl text-neutral-red font-semibold uppercase tracking-[0.25em] lg:text-7xl"
+        >
+          <span class="font-thin text-primary-red-300">We're</span> coming soon
+        </h1>
+        <p class="text-sm text-primary-red-300 lg:text-lg">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form
+          id="form-email"
+          class="flex items-center gap-2 border rounded-full lg:w-full"
+          action=""
+        >
+          <div class="relative w-full">
+            <input
+              id="email"
+              class="w-full bg-transparent px-5 py-2 outline-none rounded-full placeholder:text-primary-red-300 placeholder:text-sm placeholder:text-gray-300 lg:px-7 lg:py-4 lg:text-lg lg:placeholder:text-lg"
+              type="text"
+              placeholder="Email Address"
+            />
+
+            <p
+              id="empty-input-warning"
+              class="hidden absolute top-[115%] left-5 text-xs text-primary-red-400 lg:text-base"
             >
-              <img class="w--auto" src="./images/icon-arrow.svg" alt="Submit" />
-            </button>
-          </form>
-        </article>
-      </section>
+              Please provide an email
+            </p>
+            <p
+              id="input-warning"
+              class="hidden absolute top-[115%] left-5 text-xs text-primary-red-400 lg:text-base"
+            >
+              Please provide a valid email
+            </p>
+            <p
+              id="input-success"
+              class="hidden absolute top-[115%] left-5 text-xs text-green-500 lg:text-base"
+            >
+              Looks good!
+            </p>
+          </div>
+
+          <div id="icon-error" class="hidden">
+            <img src="./images/icon-error.svg" alt="" />
+          </div>
+
+          <button
+            type="submit"
+            id="btn-submit"
+            class="px-6 py-3 h-10 bg-gradient-to-r from-primary-red-200 to-primary-red-400 rounded-full shadow-lg ml-auto lg:h-16 lg:px-14 lg:py-5 lg:hover:drop-shadow-[-1rem_1.8rem_1.2rem_rgba(0,0,0,0.25)] lg:hover:to-primary-red-200"
+          >
+            <img class="w--auto" src="./images/icon-arrow.svg" alt="Submit" />
+          </button>
+        </form>
+      </article>
     </header>
 
     <footer class="mb-3 text-xs text-center">
