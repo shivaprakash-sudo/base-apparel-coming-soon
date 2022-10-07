@@ -4,6 +4,7 @@ window.onload = () => {
   const emptyInputWarning = document.querySelector("#empty-input-warning");
   const inputWarning = document.querySelector("#input-warning");
   const inputSuccess = document.querySelector("#input-success");
+  const iconError = document.querySelector("#icon-error");
 
   formEmail.onsubmit = (e) => {
     e.preventDefault();
@@ -17,17 +18,22 @@ window.onload = () => {
 
     if (emailInput.value === "" || emailInput.value === null) {
       addClassTo(inputWarning, "hidden");
+      addClassTo(inputSuccess, "hidden");
       removeClassFrom(emptyInputWarning, "hidden");
+      removeClassFrom(iconError, "hidden");
     } else if (!emailRegex.test(emailInput.value)) {
       removeClassFrom(formEmail, [...borderSuccess.split(" ")]);
       addClassTo(inputSuccess, "hidden");
       addClassTo(emptyInputWarning, "hidden");
       removeClassFrom(inputWarning, "hidden");
+      removeClassFrom(iconError, "hidden");
       formEmail.className += borderWarning;
     } else {
       removeClassFrom(formEmail, [...borderSuccess.split(" ")]);
       addClassTo(inputWarning, "hidden");
+      addClassTo(emptyInputWarning, "hidden");
       removeClassFrom(inputSuccess, "hidden");
+      addClassTo(iconError, "hidden");
       formEmail.className += borderSuccess;
     }
   }
